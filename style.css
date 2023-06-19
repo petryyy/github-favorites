@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --ff-primary: 'Poppins', sans-serif;
+  --text-color: white;
+
+  --primary-color: #092D38;
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background-color: black;
+}
+
+body * {
+  font-family: var(--ff-primary);
+}
+
+
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+#app {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 5rem 0;
+}
+
+.search {
+  display: flex;
+  gap: .5rem;
+}
+
+.search input {
+  height: 3.2rem;
+  border-radius: 5px;
+  padding: 0 .8rem;
+  border: black;
+  width: 31rem;
+  background-color: #06181C;
+  color: white;
+}
+
+.search button {
+  display: flex;
+  color: white;
+  gap: .2rem;
+  align-items: center;
+  background-color: #065E7C;
+  border: black;
+  padding: 0 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search button:hover {
+  filter: brightness(1.2);
+}
+
+.user a:hover {
+  text-decoration: underline;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table * {
+  font-size: 1.4rem;
+  color: var(--text-color);
+}
+
+table th {
+  background: var(--primary-color);
+  text-align: left;
+  font-weight: normal;
+  padding: 1.5rem;
+}
+
+table th:first-child {
+  border-top-left-radius: .4rem;
+}
+
+table th:last-child {
+  border-top-right-radius: .4rem;
+}
+
+table tr:nth-child(odd) {
+  background-color: #06161B80;
+}
+
+table tr:nth-child(even) {
+  background-color: #06181C;
+}
+
+table td {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+td.user a {
+  text-decoration: none;
+}
+
+td.user a p {
+  font-weight: bold;
+}
+
+td.user img {
+  width: 5rem;
+  height: 5rem;
+
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+td .btn-row {
+  background: none;
+  border: none;
+  color: #F75A68;
+  cursor: pointer;
+}
+
+td .btn-row:hover {
+  filter: brightness(1.2);
+}
+
